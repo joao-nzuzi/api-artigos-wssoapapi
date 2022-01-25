@@ -1,0 +1,16 @@
+package com.joao.articlewssoapapi.service.inter;
+
+import com.joao.articlewssoapapi.entity.ArticleEntity;
+
+import java.util.List;
+
+public interface ArticleServiceInterface{
+
+    ArticleEntity getArticlebyId(long articleId);
+
+    List<ArticleEntity> getAllArticles();
+    ArticleEntity getArticleById(long articleId);
+    boolean addArticle(ArticleEntity articleEntity);
+    void updateArticle(ArticleEntity articleEntity);
+    void deleteArticle(ArticleEntity articleEntity);
+}
